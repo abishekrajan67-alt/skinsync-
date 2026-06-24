@@ -9,6 +9,7 @@ const brands = [
   { id: "huda", name: "Huda Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Huda_Beauty_logo.svg/2560px-Huda_Beauty_logo.svg.png", stores: [{ name: "Sephora", url: "https://www.sephora.com/brand/huda-beauty" }, { name: "Amazon", url: "https://www.amazon.in/s?k=huda+beauty+foundation&tag=skinsync03-21" }, { name: "Nykaa", url: "https://www.nykaa.com/brand/huda-beauty/c/915" }] },
   { id: "fenty", name: "Fenty Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fenty_Beauty_logo.svg/2560px-Fenty_Beauty_logo.svg.png", stores: [{ name: "Sephora", url: "https://www.sephora.com/brand/fenty-beauty" }, { name: "Amazon", url: "https://www.amazon.in/s?k=fenty+beauty+foundation+india&tag=skinsync03-21" }, { name: "Nykaa", url: "https://www.nykaa.com/brand/fenty-beauty/c/916" }] },
   { id: "esteelauder", name: "Estée Lauder", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Est%C3%A9e_Lauder_logo.svg/2560px-Est%C3%A9e_Lauder_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/estee-lauder/c/916" }, { name: "Amazon", url: "https://www.amazon.in/s?k=estee+lauder+foundation&tag=skinsync03-21" }, { name: "Sephora", url: "https://www.sephora.com/brand/estee-lauder" }] },
+  { id: "insight", name: "INSIGHT Cosmetics", logo: "https://insightcosmetics.in/cdn/shop/files/insight-logo.svg?v=1707911254", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/insight-cosmetics/c/6166" }, { name: "Amazon", url: "https://www.amazon.in/s?k=insight+cosmetics+concealer&tag=skinsync03-21" }] },
 ];
 
 function shade(name, hex, undertone, depth) {
@@ -275,12 +276,26 @@ const products = [
       shade("7N1 - Deep Amber", "#58381c", "neutral", 10), shade("8N1 - Espresso", "#442414", "warm", 11),
     ],
   },
+  // ========== INSIGHT ==========
+  {
+    id: "insight-pro-corrector", brand: "insight", brandId: "insight",
+    name: "Pro Concealer Palette - Shade Corrector", type: "concealer",
+    finish: "satin-matte", coverage: "full", image: "https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=400&q=80",
+    description: "6-pan colour corrector palette that lets you conceal, correct, and contour. Creamy, blendable formula — waterproof and crease-resistant. #1 bestseller in Face Concealers on Amazon.",
+    howToUse: "Apply colour correctors before foundation. Green on redness, orange/peach on dark circles, yellow to brighten, lavender for sallowness. Set with powder.",
+    stores: [{ name: "Amazon", url: "https://www.amazon.in/INSIGHT-Combination-Palette-Corrector-Waterproof-Cr105-Corrector/dp/B08C7N271P?tag=skinsync03-21" }, { name: "Nykaa", url: "https://www.nykaa.com/insight-cosmetics-pro-concealer-palette-corrector/p/245035" }],
+    shades: [
+      shade("Green Corrector", "#a8c898", "cool", 3), shade("Peach Corrector", "#f0c8a8", "warm", 4),
+      shade("Orange Corrector", "#e8a070", "warm", 6), shade("Yellow Corrector", "#f0e8a0", "warm", 3),
+      shade("Lavender Corrector", "#d0b8e8", "cool", 2), shade("Neutral Concealer", "#c8a880", "neutral", 5),
+    ],
+  },
 ];
 
 export default products;
 export { brands };
 export const bannerSlides = [
-  { id: 1, title: "Find Your Perfect Shade", subtitle: "Answer a few questions and get matched to your ideal foundation, concealer, and skin tint across 10+ brands.", tag: "Shade Quiz", gradient: "from-pink-200 via-rose-100 to-purple-200" },
+  { id: 1, title: "Find Your Perfect Shade", subtitle: "Answer a few questions and get matched to your ideal foundation, concealer, and skin tint across 11+ brands.", tag: "Shade Quiz", gradient: "from-pink-200 via-rose-100 to-purple-200" },
   { id: 2, title: "No More Shade Guessing", subtitle: "Indian skin tones deserve better. Science-backed matching for every undertone and depth level.", tag: "Inclusive Beauty", gradient: "from-purple-200 via-violet-100 to-indigo-200" },
   { id: 3, title: "Same Shade, Multiple Brands", subtitle: "Find your match across Maybelline, L'Oréal, MAC, Lakmé, Sugar, Fenty, and more.", tag: "Cross-Brand Matches", gradient: "from-amber-200 via-orange-100 to-pink-200" },
 ];

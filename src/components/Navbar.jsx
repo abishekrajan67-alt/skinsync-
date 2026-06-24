@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="flex items-center justify-center h-9 gap-6 text-[11px] font-medium text-gray-600">
             <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-primary-400" /> 500+ Shades</span>
             <span className="w-px h-3 bg-primary-200/50" />
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-secondary-400" /> 10+ Brands</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-secondary-400" /> 11+ Brands</span>
             <span className="w-px h-3 bg-primary-200/50" />
             <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-amber-400" /> Free to Use</span>
             <span className="w-px h-3 bg-primary-200/50" />
