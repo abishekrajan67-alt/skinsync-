@@ -42,9 +42,9 @@ export default function Signup() {
                 )}
               </button>
             </div>
-            <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }} type="submit" className="w-full py-3.5 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold text-sm rounded-xl hover:from-primary-600 hover:to-secondary-600 transition-all shadow-lg shadow-primary-200/30">Create Account</motion.button>
+            <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }} type="submit" className="w-full py-3.5 bg-gradient-to-r from-terracotta to-rose text-white font-semibold text-sm rounded-xl hover:from-rose hover:to-crimson transition-all shadow-lg shadow-primary-200/30">Create Account</motion.button>
           </form>
-          <p className="mt-5 text-center text-xs text-gray-500">Already have an account? <Link to="/login" className="text-primary-600 hover:text-primary-700 font-medium">Sign in</Link></p>
+          <p className="mt-5 text-center text-xs text-gray-500">Already have an account? <Link to="/login" className="text-mahogany hover:text-primary-700 font-medium">Sign in</Link></p>
         </div>
       </motion.div>
     </div>

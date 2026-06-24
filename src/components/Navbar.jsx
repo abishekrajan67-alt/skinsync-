@@ -23,11 +23,11 @@ export default function Navbar() {
             </button>
 
             <Link to="/" className="flex items-center gap-2.5 shrink-0">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-400 to-secondary-500 flex items-center justify-center shadow-lg shadow-primary-200/40">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-caramel to-mahogany flex items-center justify-center shadow-lg shadow-primary-200/40">
                 <span className="text-lg">🎨</span>
               </div>
               <div>
-                <span className="font-serif text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent leading-none">Skin</span>
+                <span className="font-serif text-xl font-bold bg-gradient-to-r from-terracotta to-rose bg-clip-text text-transparent leading-none">Skin</span>
                 <span className="font-serif text-xl font-light text-gray-700 leading-none ml-0.5">Sync</span>
               </div>
             </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
               {user ? (
                 <div className="relative">
                   <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => setProfileOpen(!profileOpen)} className="p-0.5 rounded-xl hover:bg-primary-50 transition-colors">
-                    <div className="w-[34px] h-[34px] rounded-full bg-gradient-to-br from-primary-400 to-secondary-500 flex items-center justify-center text-white text-sm font-bold shadow-md shadow-primary-200/50">{user.name[0].toUpperCase()}</div>
+                    <div className="w-[34px] h-[34px] rounded-full bg-gradient-to-br from-caramel to-mahogany flex items-center justify-center text-white text-sm font-bold shadow-md shadow-primary-200/50">{user.name[0].toUpperCase()}</div>
                   </motion.button>
                   <AnimatePresence>
                     {profileOpen && (
@@ -69,7 +69,7 @@ export default function Navbar() {
                   </AnimatePresence>
                 </div>
               ) : (
-                <Link to="/login" className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-sm font-semibold rounded-full hover:from-primary-600 hover:to-secondary-600 transition-all shadow-lg shadow-primary-200/40">
+                <Link to="/login" className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-terracotta to-rose text-white text-sm font-semibold rounded-full hover:from-rose hover:to-crimson transition-all shadow-lg shadow-primary-200/40">
                   Sign In
                 </Link>
               )}
@@ -78,12 +78,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="hidden lg:block bg-gradient-to-r from-primary-50 via-secondary-50 to-primary-50 border-b border-primary-100/30">
+      <div className="hidden lg:block bg-gradient-to-r from-cream via-ivory to-cream border-b border-primary-100/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center h-9 gap-6 text-[11px] font-medium text-gray-600">
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-primary-400" /> 500+ Shades</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-terracotta" /> 500+ Shades</span>
             <span className="w-px h-3 bg-primary-200/50" />
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-secondary-400" /> 10+ Brands</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-caramel" /> 10+ Brands</span>
             <span className="w-px h-3 bg-primary-200/50" />
             <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-amber-400" /> Free to Use</span>
             <span className="w-px h-3 bg-primary-200/50" />
@@ -105,8 +105,8 @@ export default function Navbar() {
             >
               <div className="p-5 border-b border-primary-100/50 flex items-center justify-between">
                 <Link to="/" onClick={() => setMenuOpen(false)} className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-400 to-secondary-500 flex items-center justify-center"><span className="text-sm">🎨</span></div>
-                  <span className="font-serif text-base font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">Skin Sync</span>
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-caramel to-mahogany flex items-center justify-center"><span className="text-sm">🎨</span></div>
+                  <span className="font-serif text-base font-bold bg-gradient-to-r from-terracotta to-rose bg-clip-text text-transparent">Skin Sync</span>
                 </Link>
                 <motion.button whileHover={{ rotate: 90 }} onClick={() => setMenuOpen(false)} className="p-2 rounded-xl hover:bg-primary-50"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg></motion.button>
               </div>
@@ -129,7 +129,7 @@ export default function Navbar() {
                 ))}
                 <div className="border-t border-gray-100 mt-6 pt-6 px-5">
                   {!user ? (
-                    <Link to="/login" onClick={() => setMenuOpen(false)} className="block w-full py-3 text-center bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold text-sm rounded-xl shadow-lg shadow-primary-200/30">Sign In / Register</Link>
+                    <Link to="/login" onClick={() => setMenuOpen(false)} className="block w-full py-3 text-center bg-gradient-to-r from-terracotta to-rose text-white font-semibold text-sm rounded-xl shadow-lg shadow-primary-200/30">Sign In / Register</Link>
                   ) : (
                     <button onClick={() => { logout(); setMenuOpen(false); }} className="block w-full py-3 text-center bg-red-50 text-red-600 font-semibold text-sm rounded-xl">Sign Out</button>
                   )}

@@ -36,12 +36,12 @@ export default function Login() {
               )}</button>
             </div>
             <div className="flex items-center justify-between">
-              <label className="flex items-center gap-2 cursor-pointer"><input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-primary-600 focus:ring-primary-500" /><span className="text-xs text-gray-600">Remember me</span></label>
-              <a href="#" className="text-xs text-primary-600 hover:text-primary-700 font-medium">Forgot?</a>
+              <label className="flex items-center gap-2 cursor-pointer"><input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-mahogany focus:ring-primary-500" /><span className="text-xs text-gray-600">Remember me</span></label>
+              <a href="#" className="text-xs text-mahogany hover:text-primary-700 font-medium">Forgot?</a>
             </div>
-            <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }} type="submit" className="w-full py-3.5 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold text-sm rounded-xl hover:from-primary-600 hover:to-secondary-600 transition-all shadow-lg shadow-primary-200/30">Sign In</motion.button>
+            <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }} type="submit" className="w-full py-3.5 bg-gradient-to-r from-terracotta to-rose text-white font-semibold text-sm rounded-xl hover:from-rose hover:to-crimson transition-all shadow-lg shadow-primary-200/30">Sign In</motion.button>
           </form>
-          <p className="mt-5 text-center text-xs text-gray-500">New here? <Link to="/signup" className="text-primary-600 hover:text-primary-700 font-medium">Create account</Link></p>
+          <p className="mt-5 text-center text-xs text-gray-500">New here? <Link to="/signup" className="text-mahogany hover:text-primary-700 font-medium">Create account</Link></p>
           <div className="mt-5">
             <div className="relative"><div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200" /></div><div className="relative flex justify-center"><span className="bg-white px-3 text-[10px] text-gray-400">or continue with</span></div></div>
             <div className="mt-3.5 grid grid-cols-3 gap-2.5">

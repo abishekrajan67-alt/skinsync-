@@ -38,7 +38,7 @@ export default function Results() {
           <span className="text-6xl block mb-4">🎨</span>
           <h1 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900">Take the Quiz First</h1>
           <p className="text-gray-500 mt-2 text-sm">Answer a few questions and we'll find your perfect shades.</p>
-          <Link to="/quiz" className="mt-6 inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-bold text-sm rounded-full shadow-xl">Start the Quiz</Link>
+          <Link to="/quiz" className="mt-6 inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-terracotta to-rose text-white font-bold text-sm rounded-full shadow-xl">Start the Quiz</Link>
         </div>
       </div>
     );
@@ -46,7 +46,7 @@ export default function Results() {
 
   return (
     <div>
-      <section className="bg-gradient-to-b from-primary-50/60 to-secondary-50/30 pt-10 pb-8 sm:pt-14 sm:pb-10">
+      <section className="bg-gradient-to-b from-cream/80 to-ivory/50 pt-10 pb-8 sm:pt-14 sm:pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-2xl mx-auto">
             <span className="text-5xl block mb-3">🎉</span>
@@ -55,10 +55,10 @@ export default function Results() {
               Based on your {undertone} undertone, {depth} skin depth, {coverage} coverage, and {finish} finish preferences.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
-              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary-600 shadow-sm border border-primary-100 capitalize">{undertone} undertone</span>
-              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary-600 shadow-sm border border-primary-100 capitalize">{depth} skin</span>
-              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary-600 shadow-sm border border-primary-100 capitalize">{coverage} coverage</span>
-              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary-600 shadow-sm border border-primary-100 capitalize">{finish} finish</span>
+              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-mahogany shadow-sm border border-primary-100 capitalize">{undertone} undertone</span>
+              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-mahogany shadow-sm border border-primary-100 capitalize">{depth} skin</span>
+              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-mahogany shadow-sm border border-primary-100 capitalize">{coverage} coverage</span>
+              <span className="px-3 py-1 bg-white rounded-full text-xs font-semibold text-mahogany shadow-sm border border-primary-100 capitalize">{finish} finish</span>
             </div>
             <p className="text-xs text-gray-400 mt-3 font-medium">Found {matches.reduce((s, p) => s + p.matchCount, 0)} matching shades across {matches.length} products</p>
           </motion.div>
@@ -78,8 +78,8 @@ export default function Results() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        {brand && <span className="text-[10px] font-bold text-primary-600 uppercase tracking-wider">{brand.name}</span>}
-                        <span className="text-[10px] px-2 py-0.5 bg-primary-50 text-primary-600 rounded-full font-semibold capitalize">{p.type}</span>
+                        {brand && <span className="text-[10px] font-bold text-mahogany uppercase tracking-wider">{brand.name}</span>}
+                        <span className="text-[10px] px-2 py-0.5 bg-primary-50 text-mahogany rounded-full font-semibold capitalize">{p.type}</span>
                       </div>
                       <h3 className="font-bold text-gray-900 text-sm sm:text-base">{p.name}</h3>
                       <p className="text-xs text-gray-500 mt-1 leading-relaxed line-clamp-2">{p.description}</p>
@@ -96,7 +96,7 @@ export default function Results() {
                         <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-primary-100/40">
                           <span className="text-[10px] text-gray-400 font-semibold uppercase self-center">Buy at:</span>
                           {brand.stores.map(store => (
-                            <a key={store.name} href={store.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-primary-50 to-secondary-50 text-primary-700 text-xs font-semibold rounded-full hover:from-primary-100 hover:to-secondary-100 transition-all border border-primary-100/50">
+                            <a key={store.name} href={store.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-cream to-ivory text-mahogany text-xs font-semibold rounded-full hover:from-sand hover:to-blush-cream transition-all border border-primary-100/50">
                               {store.name}
                               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                             </a>
@@ -121,14 +121,14 @@ export default function Results() {
               <ul className="space-y-1.5">
                 {guide?.tips?.slice(0, 3).map((t, i) => (
                   <li key={i} className="text-[11px] text-gray-600 flex items-start gap-2">
-                    <span className="text-primary-500 mt-0.5">•</span>
+                    <span className="text-caramel mt-0.5">•</span>
                     <span>{t}</span>
                   </li>
                 ))}
               </ul>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl border border-primary-100/60 p-5 sm:p-6">
+            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="bg-gradient-to-br from-cream to-ivory rounded-2xl border border-primary-100/60 p-5 sm:p-6">
               <h3 className="font-bold text-gray-900 text-sm">Your Preferences</h3>
               <div className="space-y-2 mt-3">
                 {[
@@ -146,12 +146,12 @@ export default function Results() {
                   <div className="pt-2 border-t border-primary-100/40">
                     <span className="text-xs text-gray-500 font-medium block mb-1.5">Concerns</span>
                     <div className="flex flex-wrap gap-1">
-                      {concerns.map(c => <span key={c} className="text-[10px] px-2 py-0.5 bg-primary-50 text-primary-600 rounded-full font-medium capitalize">{c}</span>)}
+                      {concerns.map(c => <span key={c} className="text-[10px] px-2 py-0.5 bg-primary-50 text-mahogany rounded-full font-medium capitalize">{c}</span>)}
                     </div>
                   </div>
                 )}
               </div>
-              <Link to="/quiz" className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-primary-600 hover:text-primary-700">
+              <Link to="/quiz" className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-mahogany hover:text-primary-700">
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
                 Retake Quiz
               </Link>

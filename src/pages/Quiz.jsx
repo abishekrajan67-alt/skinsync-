@@ -43,7 +43,7 @@ export default function Quiz() {
     : (answers[current.id] || []).length > 0;
 
   return (
-    <div className="min-h-[calc(100vh-8rem)] flex items-center justify-center bg-gradient-to-b from-primary-50/30 via-white to-secondary-50/20 px-4 py-10">
+    <div className="min-h-[calc(100vh-8rem)] flex items-center justify-center bg-gradient-to-b from-cream/60 via-white to-ivory/40 px-4 py-10">
       <div className="w-full max-w-2xl">
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
@@ -52,7 +52,7 @@ export default function Quiz() {
           </div>
           <div className="w-full h-1.5 bg-primary-100 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full"
+              className="h-full bg-gradient-to-r from-terracotta to-rose rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.4 }}
@@ -138,7 +138,7 @@ export default function Quiz() {
               <button
                 onClick={next}
                 disabled={!hasSelection}
-                className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-sm font-bold rounded-xl hover:from-primary-600 hover:to-secondary-600 transition-all shadow-lg shadow-primary-200/30 disabled:opacity-40 disabled:cursor-not-allowed"
+                className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-terracotta to-rose text-white text-sm font-bold rounded-xl hover:from-rose hover:to-crimson transition-all shadow-lg shadow-primary-200/30 disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 {isLast ? "See My Matches" : "Next"}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>

@@ -13,7 +13,7 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50/30 via-white to-secondary-50/30">
+    <div className="min-h-screen bg-gradient-to-br from-cream/50 via-white to-ivory/50">
       <Navbar />
       <main className="min-h-[calc(100vh-8rem)]">
         <AnimatePresence mode="wait">

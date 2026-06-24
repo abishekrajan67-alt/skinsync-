@@ -18,7 +18,7 @@ export default function ProductCard({ product, index = 0 }) {
       onMouseEnter={() => setImgHover(true)}
       onMouseLeave={() => { setImgHover(false); setShowShades(false); }}
     >
-      <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-primary-50/80 to-secondary-50/80">
+      <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-cream/80 to-ivory/80">
         <Link to={`/product/${product.id}`}>
           <motion.img
             src={product.image}
@@ -95,8 +95,8 @@ export default function ProductCard({ product, index = 0 }) {
 
       <div className="p-3.5 sm:p-4">
         <Link to={`/product/${product.id}`}>
-          <p className="text-[10px] text-primary-600 font-semibold uppercase tracking-wider truncate">{product.brand}</p>
-          <h3 className="text-xs sm:text-sm font-medium text-gray-900 line-clamp-2 group-hover:text-primary-600 transition-colors leading-snug mt-0.5 min-h-[2.2rem]">{product.name}</h3>
+          <p className="text-[10px] text-mahogany font-semibold uppercase tracking-wider truncate">{product.brand}</p>
+          <h3 className="text-xs sm:text-sm font-medium text-gray-900 line-clamp-2 group-hover:text-mahogany transition-colors leading-snug mt-0.5 min-h-[2.2rem]">{product.name}</h3>
         </Link>
 
         <div className="flex items-center gap-1.5 mt-1.5">
