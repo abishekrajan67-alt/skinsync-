@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="font-serif text-xl font-bold">Skin Sync</span>
             </div>
             <p className="text-primary-200 text-sm leading-relaxed">
-              India's #1 shade matching tool. Find your perfect foundation, concealer, and skin tint shades across 11+ beauty brands.
+              India's #1 shade matching tool. Find your perfect foundation, concealer, and skin tint shades across 10+ beauty brands.
             </p>
             <div className="flex gap-4 mt-6">
               {["facebook", "instagram", "youtube", "twitter"].map(social => (

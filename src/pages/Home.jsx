@@ -26,7 +26,7 @@ export default function Home() {
                 Never Buy the Wrong Foundation Shade Again
               </motion.h1>
               <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="mt-4 text-base sm:text-lg text-gray-600 max-w-xl leading-relaxed font-medium">
-                Answer a few questions and get matched to your perfect foundation, concealer, and skin tint shades across 11+ brands — from Maybelline to INSIGHT.
+                Answer a few questions and get matched to your perfect foundation, concealer, and skin tint shades across 10+ brands — from Maybelline to Fenty.
               </motion.p>
               <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 }} className="mt-7 flex flex-wrap gap-3">
                 <Link to="/quiz" className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary-600 to-secondary-600 text-white text-sm font-bold rounded-full hover:from-primary-700 hover:to-secondary-700 transition-all shadow-2xl shadow-primary-300/30 hover:shadow-primary-400/40">

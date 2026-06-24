@@ -129,7 +129,7 @@ export const blogPosts = [
 export const faqs = [
   { q: "How does SkinSync match my shade?", a: "We ask about your undertone, skin depth, concerns, and preferences. Our engine then matches you to the closest shades across all brands in our database based on undertone + depth compatibility." },
   { q: "Is this accurate?", a: "Shade matching is inherently subjective — lighting, screens, and personal perception all affect it. We use standardized undertone and depth categories to give you the closest possible matches. Always test in natural light before purchasing." },
-  { q: "Which brands do you support?", a: "Currently 11+ brands: Maybelline, L'Oréal, Lakmé, Sugar, M·A·C, Nykaa, Kay Beauty, Huda Beauty, Fenty Beauty, Estée Lauder, and INSIGHT Cosmetics. We're adding more every month." },
+  { q: "Which brands do you support?", a: "Currently 10+ brands: Maybelline, L'Oréal, Lakmé, Sugar, M·A·C, Nykaa, Kay Beauty, Huda Beauty, Fenty Beauty, and Estée Lauder. We're adding more every month." },
   { q: "Do you sell products?", a: "No — we're a matching tool. We provide affiliate links to partner stores (Nykaa, Amazon, Myntra, Sephora) where you can purchase your matched shades." },
   { q: "How do I find my undertone?", a: "The easiest way: check your wrist veins in natural light. Blue/purple = cool, greenish = warm, both = neutral, can't tell = olive. Try our quiz for a detailed assessment." },
   { q: "What's the difference between foundation and concealer shades?", a: "Concealer is typically one shade lighter than your foundation for under-eyes, or the exact shade for spot concealing. Our quiz considers this and recommends both." },
