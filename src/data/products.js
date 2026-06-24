@@ -1,14 +1,14 @@
 const brands = [
-  { id: "maybelline", name: "Maybelline New York", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Maybelline_logo.svg/2560px-Maybelline_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/maybelline/c/832" }, { name: "Amazon", url: "https://www.amazon.in/s?k=maybelline+foundation" }] },
-  { id: "loreal", name: "L'Oréal Paris", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/L%27Or%C3%A9al_Paris_logo.svg/2560px-L%27Or%C3%A9al_Paris_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/loreal-paris/c/877" }, { name: "Myntra", url: "https://www.myntra.com/loreal-paris" }] },
-  { id: "lakme", name: "Lakmé", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lakm%C3%A9_logo.svg/2560px-Lakm%C3%A9_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/lakme/c/884" }, { name: "Amazon", url: "https://www.amazon.in/s?k=lakme+foundation" }] },
-  { id: "sugar", name: "Sugar Cosmetics", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sugar_Cosmetics_logo.png/2560px-Sugar_Cosmetics_logo.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/sugar/c/870" }, { name: "Myntra", url: "https://www.myntra.com/sugar-cosmetics" }] },
-  { id: "mac", name: "M·A·C Cosmetics", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/MAC_Cosmetics_logo.svg/2560px-MAC_Cosmetics_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/mac/c/897" }, { name: "Sephora", url: "https://www.sephora.com/brand/mac-cosmetics" }] },
-  { id: "nykaa", name: "Nykaa Cosmetics", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nykaa_logo.svg/2560px-Nykaa_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/nykaa/c/857" }] },
-  { id: "kay", name: "Kay Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Kay_Beauty_logo.png/2560px-Kay_Beauty_logo.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/kay-beauty/c/889" }] },
-  { id: "huda", name: "Huda Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Huda_Beauty_logo.svg/2560px-Huda_Beauty_logo.svg.png", stores: [{ name: "Sephora", url: "https://www.sephora.com/brand/huda-beauty" }, { name: "Nykaa", url: "https://www.nykaa.com/brand/huda-beauty/c/915" }] },
-  { id: "fenty", name: "Fenty Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fenty_Beauty_logo.svg/2560px-Fenty_Beauty_logo.svg.png", stores: [{ name: "Sephora", url: "https://www.sephora.com/brand/fenty-beauty" }, { name: "Nykaa", url: "https://www.nykaa.com/brand/fenty-beauty/c/916" }] },
-  { id: "esteelauder", name: "Estée Lauder", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Est%C3%A9e_Lauder_logo.svg/2560px-Est%C3%A9e_Lauder_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/estee-lauder/c/916" }, { name: "Sephora", url: "https://www.sephora.com/brand/estee-lauder" }] },
+  { id: "maybelline", name: "Maybelline New York", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Maybelline_logo.svg/2560px-Maybelline_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/maybelline/c/832" }, { name: "Amazon", url: "https://www.amazon.in/s?k=maybelline+foundation&tag=skinsync03-21" }] },
+  { id: "loreal", name: "L'Oréal Paris", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/L%27Or%C3%A9al_Paris_logo.svg/2560px-L%27Or%C3%A9al_Paris_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/loreal-paris/c/877" }, { name: "Amazon", url: "https://www.amazon.in/s?k=loreal+foundation+india&tag=skinsync03-21" }, { name: "Myntra", url: "https://www.myntra.com/loreal-paris" }] },
+  { id: "lakme", name: "Lakmé", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lakm%C3%A9_logo.svg/2560px-Lakm%C3%A9_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/lakme/c/884" }, { name: "Amazon", url: "https://www.amazon.in/s?k=lakme+foundation&tag=skinsync03-21" }] },
+  { id: "sugar", name: "Sugar Cosmetics", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sugar_Cosmetics_logo.png/2560px-Sugar_Cosmetics_logo.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/sugar/c/870" }, { name: "Amazon", url: "https://www.amazon.in/s?k=sugar+cosmetics+foundation&tag=skinsync03-21" }, { name: "Myntra", url: "https://www.myntra.com/sugar-cosmetics" }] },
+  { id: "mac", name: "M·A·C Cosmetics", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/MAC_Cosmetics_logo.svg/2560px-MAC_Cosmetics_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/mac/c/897" }, { name: "Amazon", url: "https://www.amazon.in/s?k=mac+cosmetics+foundation&tag=skinsync03-21" }, { name: "Sephora", url: "https://www.sephora.com/brand/mac-cosmetics" }] },
+  { id: "nykaa", name: "Nykaa Cosmetics", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nykaa_logo.svg/2560px-Nykaa_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/nykaa/c/857" }, { name: "Amazon", url: "https://www.amazon.in/s?k=nykaa+cosmetics+foundation&tag=skinsync03-21" }] },
+  { id: "kay", name: "Kay Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Kay_Beauty_logo.png/2560px-Kay_Beauty_logo.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/kay-beauty/c/889" }, { name: "Amazon", url: "https://www.amazon.in/s?k=kay+beauty+foundation&tag=skinsync03-21" }] },
+  { id: "huda", name: "Huda Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Huda_Beauty_logo.svg/2560px-Huda_Beauty_logo.svg.png", stores: [{ name: "Sephora", url: "https://www.sephora.com/brand/huda-beauty" }, { name: "Amazon", url: "https://www.amazon.in/s?k=huda+beauty+foundation&tag=skinsync03-21" }, { name: "Nykaa", url: "https://www.nykaa.com/brand/huda-beauty/c/915" }] },
+  { id: "fenty", name: "Fenty Beauty", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fenty_Beauty_logo.svg/2560px-Fenty_Beauty_logo.svg.png", stores: [{ name: "Sephora", url: "https://www.sephora.com/brand/fenty-beauty" }, { name: "Amazon", url: "https://www.amazon.in/s?k=fenty+beauty+foundation+india&tag=skinsync03-21" }, { name: "Nykaa", url: "https://www.nykaa.com/brand/fenty-beauty/c/916" }] },
+  { id: "esteelauder", name: "Estée Lauder", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Est%C3%A9e_Lauder_logo.svg/2560px-Est%C3%A9e_Lauder_logo.svg.png", stores: [{ name: "Nykaa", url: "https://www.nykaa.com/brand/estee-lauder/c/916" }, { name: "Amazon", url: "https://www.amazon.in/s?k=estee+lauder+foundation&tag=skinsync03-21" }, { name: "Sephora", url: "https://www.sephora.com/brand/estee-lauder" }] },
 ];
 
 function shade(name, hex, undertone, depth) {
@@ -23,7 +23,7 @@ const products = [
     finish: "matte", coverage: "medium", image: "https://images.unsplash.com/photo-1590156546646-0e9e1a5e2d3c?w=400&q=80",
     description: "Lightweight foundation that mattifies and refines pores. Best for normal to oily skin.",
     howToUse: "Shake well. Apply with fingertips or a damp sponge, starting from the centre of your face and blending outward.",
-    stores: [{ name: "Nykaa", url: "https://www.nykaa.com/maybelline-fit-me-matte-poreless-foundation/p/245018" }, { name: "Amazon", url: "https://www.amazon.in/dp/B00L7I5HVC" }],
+    stores: [{ name: "Nykaa", url: "https://www.nykaa.com/maybelline-fit-me-matte-poreless-foundation/p/245018" }, { name: "Amazon", url: "https://www.amazon.in/Maybelline-Matte-Poreless-Liquid-Foundation/dp/B07L3R68G2?tag=skinsync03-21" }],
     shades: [
       shade("Porcelain", "#f5e8e0", "cool", 1), shade("Ivory", "#f0ddd0", "warm", 2), shade("Fair", "#ead5c0", "neutral", 2),
       shade("Natural Ivory", "#e0c8b0", "warm", 3), shade("Creamy Beige", "#d4b89c", "neutral", 4), shade("Nude Beige", "#c8a888", "warm", 4),
@@ -37,7 +37,7 @@ const products = [
     name: "Fit Me Concealer", type: "concealer",
     finish: "natural", coverage: "medium", image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
     description: "Lightweight concealer that covers imperfections and brightens under eyes.",
-    stores: [{ name: "Nykaa", url: "https://www.nykaa.com/maybelline-fit-me-concealer/p/245019" }, { name: "Amazon", url: "https://www.amazon.in/dp/B00L7I5HVE" }],
+    stores: [{ name: "Nykaa", url: "https://www.nykaa.com/maybelline-fit-me-concealer/p/245019" }, { name: "Amazon", url: "https://www.amazon.in/dp/B00L7I5HVE?tag=skinsync03-21" }],
     shades: [
       shade("Fair", "#f0d8c8", "cool", 1), shade("Light", "#e0c0a8", "neutral", 2), shade("Medium", "#c8a080", "neutral", 4),
       shade("Sand", "#b48868", "warm", 5), shade("Honey", "#a07050", "warm", 6), shade("Caramel", "#7c5840", "neutral", 7),
@@ -81,7 +81,7 @@ const products = [
     finish: "matte", coverage: "medium", image: "https://images.unsplash.com/photo-1583663848855-6a69f8b30b8e?w=400&q=80",
     description: "Skin-hugging matte foundation with SPF 20. Stays fresh for up to 16 hours.",
     howToUse: "Dot on forehead, cheeks, and chin. Blend outward using a damp sponge for a flawless finish.",
-    stores: [{ name: "Nykaa", url: "https://www.nykaa.com/lakme-absolute-matte-real-foundation/p/245022" }, { name: "Amazon", url: "https://www.amazon.in/dp/B07J6X8Z9C" }],
+    stores: [{ name: "Nykaa", url: "https://www.nykaa.com/lakme-absolute-matte-real-foundation/p/245022" }, { name: "Amazon", url: "https://www.amazon.in/dp/B07J6X8Z9C?tag=skinsync03-21" }],
     shades: [
       shade("Ivory", "#eed4be", "cool", 1), shade("Fair", "#e4c4ac", "neutral", 2), shade("Light Beige", "#d8b898", "warm", 3),
       shade("Natural Beige", "#c8a080", "neutral", 4), shade("Sand Beige", "#b89070", "warm", 5), shade("Golden Beige", "#a88060", "warm", 5),
