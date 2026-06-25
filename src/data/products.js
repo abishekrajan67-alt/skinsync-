@@ -20,7 +20,7 @@ const products = [
   {
     id: "maybelline-fitme-foundation", brand: "maybelline", brandId: "maybelline",
     name: "Fit Me Matte + Poreless Foundation", type: "foundation",
-    finish: "matte", coverage: "medium", image: "https://images.unsplash.com/photo-1590156546646-0e9e1a5e2d3c?w=400&q=80",
+    finish: "matte", coverage: "medium", skinTypes: ["oily", "combination", "normal"], image: "https://images.unsplash.com/photo-1590156546646-0e9e1a5e2d3c?w=400&q=80",
     description: "Lightweight foundation that mattifies and refines pores. Best for normal to oily skin.",
     howToUse: "Shake well. Apply with fingertips or a damp sponge, starting from the centre of your face and blending outward.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/maybelline-fit-me-matte-poreless-foundation/p/245018" }, { name: "Amazon", url: "https://www.amazon.in/Maybelline-Matte-Poreless-Liquid-Foundation/dp/B07L3R68G2?tag=skinsync03-21" }],
@@ -35,7 +35,7 @@ const products = [
   {
     id: "maybelline-fitme-concealer", brand: "maybelline", brandId: "maybelline",
     name: "Fit Me Concealer", type: "concealer",
-    finish: "natural", coverage: "medium", image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
+    finish: "natural", coverage: "medium", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
     description: "Lightweight concealer that covers imperfections and brightens under eyes.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/maybelline-fit-me-concealer/p/245019" }, { name: "Amazon", url: "https://www.amazon.in/dp/B00L7I5HVE?tag=skinsync03-21" }],
     shades: [
@@ -49,7 +49,7 @@ const products = [
   {
     id: "loreal-infallible-foundation", brand: "loreal", brandId: "loreal",
     name: "Infallible 24H Fresh Wear Foundation", type: "foundation",
-    finish: "natural", coverage: "medium-full", image: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80",
+    finish: "natural", coverage: "medium-full", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80",
     description: "Breathable, lightweight foundation with up to 24-hour wear. Transfer-resistant and SPF 25.",
     howToUse: "Apply with fingertips, brush, or sponge. Build coverage as needed. Sets to a natural finish.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/loreal-paris-infallible-fresh-wear-foundation/p/245020" }, { name: "Myntra", url: "https://www.myntra.com/loreal-paris-infallible-foundation" }],
@@ -64,7 +64,7 @@ const products = [
   {
     id: "loreal-true-match-concealer", brand: "loreal", brandId: "loreal",
     name: "True Match Concealer", type: "concealer",
-    finish: "radiant", coverage: "medium", image: "https://images.unsplash.com/photo-1610191004386-d1b25fd0f361?w=400&q=80",
+    finish: "radiant", coverage: "medium", skinTypes: ["dry", "normal"], image: "https://images.unsplash.com/photo-1610191004386-d1b25fd0f361?w=400&q=80",
     description: "Hydrating concealer with precision wand. Blends seamlessly for a natural brightened look.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/loreal-paris-true-match-concealer/p/245021" }],
     shades: [
@@ -78,7 +78,7 @@ const products = [
   {
     id: "lakme-absolute-foundation", brand: "lakme", brandId: "lakme",
     name: "Absolute Matte Real Skin Foundation", type: "foundation",
-    finish: "matte", coverage: "medium", image: "https://images.unsplash.com/photo-1583663848855-6a69f8b30b8e?w=400&q=80",
+    finish: "matte", coverage: "medium", skinTypes: ["oily", "combination"], image: "https://images.unsplash.com/photo-1583663848855-6a69f8b30b8e?w=400&q=80",
     description: "Skin-hugging matte foundation with SPF 20. Stays fresh for up to 16 hours.",
     howToUse: "Dot on forehead, cheeks, and chin. Blend outward using a damp sponge for a flawless finish.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/lakme-absolute-matte-real-foundation/p/245022" }, { name: "Amazon", url: "https://www.amazon.in/dp/B07J6X8Z9C?tag=skinsync03-21" }],
@@ -92,7 +92,7 @@ const products = [
   {
     id: "lakme-9to5-concealer", brand: "lakme", brandId: "lakme",
     name: "9 to 5 Primer + Matte Concealer", type: "concealer",
-    finish: "matte", coverage: "full", image: "https://images.unsplash.com/photo-1612293908766-0e2e7b09a220?w=400&q=80",
+    finish: "matte", coverage: "full", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1612293908766-0e2e7b09a220?w=400&q=80",
     description: "2-in-1 primer and concealer for a smooth, matte finish. Covers dark circles and blemishes.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/lakme-9-to-5-primer-concealer/p/245023" }],
     shades: [
@@ -105,7 +105,7 @@ const products = [
   {
     id: "sugar-foundation", brand: "sugar", brandId: "sugar",
     name: "ACE of Face Foundation Stick", type: "foundation",
-    finish: "natural", coverage: "medium-full", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&q=80",
+    finish: "natural", coverage: "medium-full", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&q=80",
     description: "Buildable stick foundation that glides on smoothly. Perfect for on-the-go touch-ups.",
     howToUse: "Swirl directly on skin and blend with a brush or sponge. Layer for fuller coverage.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/sugar-ace-of-face-foundation-stick/p/245024" }, { name: "Myntra", url: "https://www.myntra.com/sugar-ace-of-face-foundation" }],
@@ -119,7 +119,7 @@ const products = [
   {
     id: "sugar-concealer", brand: "sugar", brandId: "sugar",
     name: "Arrest the Concealer", type: "concealer",
-    finish: "matte", coverage: "full", image: "https://images.unsplash.com/photo-1630350533585-1e3c1a8d2a3e?w=400&q=80",
+    finish: "matte", coverage: "full", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1630350533585-1e3c1a8d2a3e?w=400&q=80",
     description: "Full-coverage liquid concealer that stays put. Hides dark spots, blemishes, and under-eye circles.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/sugar-arrest-the-concealer/p/245025" }],
     shades: [
@@ -133,7 +133,7 @@ const products = [
   {
     id: "mac-studio-fix-foundation", brand: "mac", brandId: "mac",
     name: "Studio Fix Fluid SPF 15 Foundation", type: "foundation",
-    finish: "matte", coverage: "medium-full", image: "https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=400&q=80",
+    finish: "matte", coverage: "medium-full", skinTypes: ["oily", "combination"], image: "https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=400&q=80",
     description: "Iconic oil-control foundation with SPF 15. Provides a flawless airbrushed finish that lasts all day.",
     howToUse: "Shake well. Apply with a foundation brush or damp sponge, blending from the centre outward.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/mac-studio-fix-fluid/p/245026" }, { name: "Sephora", url: "https://www.sephora.com/product/mac-studio-fix-fluid-P123456" }],
@@ -149,7 +149,7 @@ const products = [
   {
     id: "mac-pro-longwear-concealer", brand: "mac", brandId: "mac",
     name: "Pro Longwear Concealer", type: "concealer",
-    finish: "natural", coverage: "full", image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
+    finish: "natural", coverage: "full", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
     description: "Long-wearing, crease-resistant concealer that provides 15-hour wear. Great for spot concealing and under-eyes.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/mac-pro-longwear-concealer/p/245027" }],
     shades: [
@@ -164,7 +164,7 @@ const products = [
   {
     id: "nykaa-foundation", brand: "nykaa", brandId: "nykaa",
     name: "Skin Shield Foundation", type: "foundation",
-    finish: "natural", coverage: "medium", image: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80",
+    finish: "natural", coverage: "medium", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80",
     description: "Lightweight, breathable foundation with SPF 30. Enriched with niacinamide for skin benefits.",
     howToUse: "Apply with a damp sponge or foundation brush. Buildable from medium to full coverage.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/nykaa-skin-shield-foundation/p/245028" }],
@@ -178,7 +178,7 @@ const products = [
   {
     id: "nykaa-concealer", brand: "nykaa", brandId: "nykaa",
     name: "Bae Satin Liquid Concealer", type: "concealer",
-    finish: "satin", coverage: "full", image: "https://images.unsplash.com/photo-1610191004386-d1b25fd0f361?w=400&q=80",
+    finish: "satin", coverage: "full", skinTypes: ["dry", "normal"], image: "https://images.unsplash.com/photo-1610191004386-d1b25fd0f361?w=400&q=80",
     description: "Satin-finish concealer that hydrates while covering imperfections. Infused with hyaluronic acid.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/nykaa-bae-satin-concealer/p/245029" }],
     shades: [
@@ -191,7 +191,7 @@ const products = [
   {
     id: "kay-foundation", brand: "kay", brandId: "kay",
     name: "Stay Fix Matte Foundation", type: "foundation",
-    finish: "matte", coverage: "medium-full", image: "https://images.unsplash.com/photo-1590156546646-0e9e1a5e2d3c?w=400&q=80",
+    finish: "matte", coverage: "medium-full", skinTypes: ["oily", "combination", "normal"], image: "https://images.unsplash.com/photo-1590156546646-0e9e1a5e2d3c?w=400&q=80",
     description: "Oil-free matte foundation that controls shine for up to 18 hours. Non-comedogenic and dermatologically tested.",
     howToUse: "Shake and pump onto the back of your hand, then blend with a sponge or brush from the centre outward.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/kay-beauty-stay-fix-foundation/p/245030" }],
@@ -205,7 +205,7 @@ const products = [
   {
     id: "kay-concealer", brand: "kay", brandId: "kay",
     name: "Stay Fix Matte Concealer", type: "concealer",
-    finish: "matte", coverage: "full", image: "https://images.unsplash.com/photo-1612293908766-0e2e7b09a220?w=400&q=80",
+    finish: "matte", coverage: "full", skinTypes: ["oily", "combination"], image: "https://images.unsplash.com/photo-1612293908766-0e2e7b09a220?w=400&q=80",
     description: "Full-coverage matte concealer that stays crease-free all day. Covers dark circles, blemishes, and pigmentation.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/kay-beauty-stay-fix-concealer/p/245031" }],
     shades: [
@@ -218,7 +218,7 @@ const products = [
   {
     id: "huda-foundation", brand: "huda", brandId: "huda",
     name: "#FauxFilter Foundation", type: "foundation",
-    finish: "natural", coverage: "full", image: "https://images.unsplash.com/photo-1583663848855-6a69f8b30b8e?w=400&q=80",
+    finish: "natural", coverage: "full", skinTypes: ["dry", "normal"], image: "https://images.unsplash.com/photo-1583663848855-6a69f8b30b8e?w=400&q=80",
     description: "Skin-like full-coverage foundation with a natural radiant finish. Enriched with argan oil and vitamin E.",
     howToUse: "Dispense one pump and blend with a damp sponge for medium coverage, or a brush for full coverage.",
     stores: [{ name: "Sephora", url: "https://www.sephora.com/product/huda-beauty-faux-filter-P123456" }, { name: "Nykaa", url: "https://www.nykaa.com/huda-beauty-faux-filter-foundation/p/245032" }],
@@ -234,7 +234,7 @@ const products = [
   {
     id: "fenty-foundation", brand: "fenty", brandId: "fenty",
     name: "Pro Filt'r Soft Matte Foundation", type: "foundation",
-    finish: "matte", coverage: "medium-full", image: "https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=400&q=80",
+    finish: "matte", coverage: "medium-full", skinTypes: ["oily", "combination", "normal"], image: "https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=400&q=80",
     description: "Revolutionary foundation with 50 shades. Soft matte finish that blurs pores and controls oil without drying.",
     howToUse: "Shake well. Apply with fingertips, a sponge, or a brush. Builds easily for customizable coverage.",
     stores: [{ name: "Sephora", url: "https://www.sephora.com/product/fenty-beauty-pro-filtr-P123456" }, { name: "Nykaa", url: "https://www.nykaa.com/fenty-beauty-pro-filtr-foundation/p/245033" }],
@@ -249,7 +249,7 @@ const products = [
   {
     id: "fenty-concealer", brand: "fenty", brandId: "fenty",
     name: "Pro Filt'r Concealer", type: "concealer",
-    finish: "natural", coverage: "full", image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
+    finish: "natural", coverage: "full", skinTypes: ["all"], image: "https://images.unsplash.com/photo-1631730359584-3b6a8e3d5a3a?w=400&q=80",
     description: "Long-wearing, buildable concealer with a natural finish. Brightens under-eyes and covers blemishes.",
     stores: [{ name: "Sephora", url: "https://www.sephora.com/product/fenty-beauty-pro-filtr-concealer-P123456" }],
     shades: [
@@ -263,7 +263,7 @@ const products = [
   {
     id: "esteelauder-foundation", brand: "esteelauder", brandId: "esteelauder",
     name: "Double Wear Stay-in-Place Foundation", type: "foundation",
-    finish: "natural", coverage: "medium-full", image: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80",
+    finish: "natural", coverage: "medium-full", skinTypes: ["oily", "combination", "normal"], image: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80",
     description: "The iconic 24-hour wear foundation. Stays flawless through humidity, sweat, and tears. SPF 10.",
     howToUse: "Apply with fingertips or a damp sponge. Use one pump for medium coverage — build for full. Sets quickly, so work in sections.",
     stores: [{ name: "Nykaa", url: "https://www.nykaa.com/estee-lauder-double-wear-foundation/p/245034" }, { name: "Sephora", url: "https://www.sephora.com/product/estee-lauder-double-wear-P123456" }],

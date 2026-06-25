@@ -26,18 +26,15 @@ export const quizSteps = [
     ],
   },
   {
-    id: "concerns",
-    title: "Any Skin Concerns?",
-    subtitle: "We'll recommend formulas that work best for your skin type and concerns.",
-    type: "multiple",
+    id: "skinType",
+    title: "What's Your Skin Type?",
+    subtitle: "We'll recommend formulas designed for your skin — the right formula makes all the difference.",
+    type: "single",
     options: [
-      { id: "oily", label: "Oily Skin", emoji: "✨", description: "Shiny T-zone, enlarged pores" },
-      { id: "dry", label: "Dry Skin", emoji: "🏜️", description: "Flaky patches, tight feeling" },
-      { id: "acne", label: "Acne-Prone", emoji: "🔴", description: "Breakouts, blemishes" },
-      { id: "sensitive", label: "Sensitive", emoji: "🌿", description: "Redness, irritation" },
-      { id: "pigmentation", label: "Pigmentation", emoji: "🌞", description: "Dark spots, uneven tone" },
-      { id: "aging", label: "Mature/Aging", emoji: "💫", description: "Fine lines, loss of firmness" },
-      { id: "combination", label: "Combination", emoji: "🌀", description: "Oily T-zone, dry cheeks" },
+      { id: "oily", label: "Oily / Shiny", emoji: "✨", description: "Gets shiny quickly, enlarged pores — look for matte, oil-free" },
+      { id: "dry", label: "Dry / Flaky", emoji: "🏜️", description: "Tight, flaky patches — look for hydrating, radiant formulas" },
+      { id: "combination", label: "Combination", emoji: "🌀", description: "Oily T-zone, dry cheeks — look for balanced, natural finish" },
+      { id: "normal", label: "Normal / Balanced", emoji: "🌿", description: "Neither too oily nor too dry — most formulas work" },
     ],
   },
   {
@@ -127,7 +124,7 @@ export const blogPosts = [
 ];
 
 export const faqs = [
-  { q: "How does SkinSync match my shade?", a: "We ask about your undertone, skin depth, concerns, and preferences. Our engine then matches you to the closest shades across all brands in our database based on undertone + depth compatibility." },
+  { q: "How does SkinSync match my shade?", a: "We ask about your undertone, skin depth, skin type, coverage, and finish preferences. Our engine matches you to the best product formulas first, then finds your exact shade across our database." },
   { q: "Is this accurate?", a: "Shade matching is inherently subjective — lighting, screens, and personal perception all affect it. We use standardized undertone and depth categories to give you the closest possible matches. Always test in natural light before purchasing." },
   { q: "Which brands do you support?", a: "Currently 10+ brands: Maybelline, L'Oréal, Lakmé, Sugar, M·A·C, Nykaa, Kay Beauty, Huda Beauty, Fenty Beauty, and Estée Lauder. We're adding more every month." },
   { q: "Do you sell products?", a: "No — we're a matching tool. We provide affiliate links to partner stores (Nykaa, Amazon, Myntra, Sephora) where you can purchase your matched shades." },
