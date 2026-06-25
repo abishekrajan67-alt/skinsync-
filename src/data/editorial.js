@@ -1,66 +1,44 @@
+const quizOptions = {
+  skinType: [
+    { id: "oily", label: "Oily / Shiny", emoji: "✨", description: "Gets shiny quickly, enlarged pores — go for matte, oil-free", formulaTip: "Matte, oil-control formulas" },
+    { id: "dry", label: "Dry / Flaky", emoji: "🏜️", description: "Tight, flaky patches — go for hydrating, radiant", formulaTip: "Hydrating, dewy formulas" },
+    { id: "combination", label: "Combination", emoji: "🌀", description: "Oily T-zone, dry cheeks — go for balanced", formulaTip: "Natural, balanced formulas" },
+    { id: "normal", label: "Normal / Balanced", emoji: "🌿", description: "Neither too oily nor too dry — most formulas work", formulaTip: "Most formulas work" },
+  ],
+  undertone: [
+    { id: "cool", label: "Cool", emoji: "❄️", description: "Pink, red, or bluish hints — silver looks best on you", hex: "#f0c4c4", check: "Veins appear blue/purple" },
+    { id: "warm", label: "Warm", emoji: "☀️", description: "Yellow, golden, or peachy hints — gold looks best on you", hex: "#f0d4a0", check: "Veins appear greenish" },
+    { id: "neutral", label: "Neutral", emoji: "⚖️", description: "A mix of both — no strong pink or yellow", hex: "#e8c8b0", check: "Veins appear blue-green" },
+    { id: "olive", label: "Olive", emoji: "🫒", description: "Greenish or ashy — very common in Indian skin", hex: "#d4c0a0", check: "Veins are hard to see" },
+  ],
+  depth: [
+    { id: "fair", label: "Fair", emoji: "🌸", description: "Very light — burns easily in the sun", depthRange: "1-2" },
+    { id: "light", label: "Light", emoji: "🌼", description: "Light to light-medium — tans minimally", depthRange: "3-4" },
+    { id: "medium", label: "Medium", emoji: "🌻", description: "Medium beige to tan — most common for Indian skin", depthRange: "5-6" },
+    { id: "tan", label: "Tan", emoji: "🌺", description: "Tan to warm brown — common across central India", depthRange: "7-8" },
+    { id: "brown", label: "Brown", emoji: "🌹", description: "Brown to deep brown — common in South India", depthRange: "9-10" },
+    { id: "deep", label: "Deep", emoji: "🌑", description: "Deep to dark — often underserved by mainstream brands", depthRange: "11-12" },
+  ],
+  coverage: [
+    { id: "sheer", label: "Sheer", emoji: "🫧", description: "Very light, barely-there — evens out just a little" },
+    { id: "light", label: "Light", emoji: "☁️", description: "Natural, evens out skin tone — looks like skin" },
+    { id: "medium", label: "Medium", emoji: "🌤️", description: "Buildable, hides most imperfections — everyday perfect" },
+    { id: "full", label: "Full", emoji: "☀️", description: "Maximum coverage, flawless finish — glam mode" },
+  ],
+  finish: [
+    { id: "matte", label: "Matte", emoji: "🌸", description: "Shine-free, velvety look — great for oily skin" },
+    { id: "natural", label: "Natural", emoji: "🌿", description: "Skin-like, satin finish — looks like you, but better" },
+    { id: "radiant", label: "Radiant", emoji: "✨", description: "Dewy, luminous glow — lit-from-within" },
+    { id: "satin", label: "Satin", emoji: "💎", description: "Soft sheen, balanced — in-between matte & dewy" },
+  ],
+};
+
 export const quizSteps = [
-  {
-    id: "undertone",
-    title: "What's Your Undertone?",
-    subtitle: "The undertone is the natural colour beneath your skin's surface. It stays the same regardless of tan or sun exposure.",
-    type: "single",
-    options: [
-      { id: "cool", label: "Cool", emoji: "❄️", description: "Pink, red, or bluish hints", hex: "#f0c4c4" },
-      { id: "warm", label: "Warm", emoji: "☀️", description: "Yellow, golden, or peachy hints", hex: "#f0d4a0" },
-      { id: "neutral", label: "Neutral", emoji: "⚖️", description: "A mix of both — no strong pink or yellow", hex: "#e8c8b0" },
-      { id: "olive", label: "Olive", emoji: "🫒", description: "Greenish or ashy undertone, common in Indian skin", hex: "#d4c0a0" },
-    ],
-  },
-  {
-    id: "depth",
-    title: "What's Your Skin Depth?",
-    subtitle: "Skin depth refers to how light or dark your skin is. Pick the range closest to yours.",
-    type: "single",
-    options: [
-      { id: "fair", label: "Fair", emoji: "🌸", description: "Very light skin", depthRange: "1-2" },
-      { id: "light", label: "Light", emoji: "🌼", description: "Light to light-medium", depthRange: "3-4" },
-      { id: "medium", label: "Medium", emoji: "🌻", description: "Medium beige to tan", depthRange: "5-6" },
-      { id: "tan", label: "Tan", emoji: "🌺", description: "Tan to brown", depthRange: "7-8" },
-      { id: "brown", label: "Brown", emoji: "🌹", description: "Brown to deep brown", depthRange: "9-10" },
-      { id: "deep", label: "Deep", emoji: "🌑", description: "Deep to dark", depthRange: "11-12" },
-    ],
-  },
-  {
-    id: "skinType",
-    title: "What's Your Skin Type?",
-    subtitle: "We'll recommend formulas designed for your skin — the right formula makes all the difference.",
-    type: "single",
-    options: [
-      { id: "oily", label: "Oily / Shiny", emoji: "✨", description: "Gets shiny quickly, enlarged pores — look for matte, oil-free" },
-      { id: "dry", label: "Dry / Flaky", emoji: "🏜️", description: "Tight, flaky patches — look for hydrating, radiant formulas" },
-      { id: "combination", label: "Combination", emoji: "🌀", description: "Oily T-zone, dry cheeks — look for balanced, natural finish" },
-      { id: "normal", label: "Normal / Balanced", emoji: "🌿", description: "Neither too oily nor too dry — most formulas work" },
-    ],
-  },
-  {
-    id: "coverage",
-    title: "What Coverage Do You Prefer?",
-    subtitle: "Choose how much coverage you want from your base makeup.",
-    type: "single",
-    options: [
-      { id: "sheer", label: "Sheer", emoji: "🫧", description: "Very light, barely-there finish" },
-      { id: "light", label: "Light", emoji: "☁️", description: "Natural, evens out skin tone" },
-      { id: "medium", label: "Medium", emoji: "🌤️", description: "Buildable, hides most imperfections" },
-      { id: "full", label: "Full", emoji: "☀️", description: "Maximum coverage, flawless finish" },
-    ],
-  },
-  {
-    id: "finish",
-    title: "What Finish Do You Like?",
-    subtitle: "The finish determines how your base makeup looks on the skin.",
-    type: "single",
-    options: [
-      { id: "matte", label: "Matte", emoji: "🌸", description: "Shine-free, velvety look" },
-      { id: "natural", label: "Natural", emoji: "🌿", description: "Skin-like, satin finish" },
-      { id: "radiant", label: "Radiant", emoji: "✨", description: "Dewy, luminous glow" },
-      { id: "satin", label: "Satin", emoji: "💎", description: "Soft sheen, in-between" },
-    ],
-  },
+  { id: "skinType", title: "What's Your Skin Like?", subtitle: "Oily, dry, or somewhere in between? This tells us which formula will work best for you.", type: "single", options: quizOptions.skinType },
+  { id: "undertone", title: "Let's Find Your Undertone", subtitle: "Look at your wrist veins in natural light. The colour tells you everything.", type: "single", options: quizOptions.undertone },
+  { id: "depth", title: "How Light or Dark Is Your Skin?", subtitle: "From fair to deep — pick the range closest to yours. We'll refine from there.", type: "single", options: quizOptions.depth },
+  { id: "coverage", title: "How Much Coverage?", subtitle: "From barely-there to full glam — how much do you want your foundation to do?", type: "single", options: quizOptions.coverage },
+  { id: "finish", title: "What Vibe Do You Want?", subtitle: "Matte = shine-free. Radiant = dewy glow. Natural = your skin but better.", type: "single", options: quizOptions.finish },
 ];
 
 export const undertoneGuide = {
